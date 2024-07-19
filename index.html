@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tantangan: Yang Bergerak Duluan Adalah GAY</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login" class="login">
+        <h1>Masukkan Tantangan</h1>
+        <input type="text" id="username" placeholder="Masukkan nama pengguna">
+        <button onclick="submitUsername()">Mulai</button>
+    </div>
+    <div id="content" class="challenge" style="display: none;">
+        <div class="message" id="movingText">Yang bergerak duluan adalah GAY!</div>
+        <button class="button" onclick="giveUp()">Menyerah</button>
+        <div id="countdown" class="countdown"></div>
+        <div id="subtitle" class="subtitle"></div>
+    </div>
+    <audio id="backsound" src="backsound.mp3" loop></audio>
+    <script src="scripts.js"></script>
+</body>
+</html>
